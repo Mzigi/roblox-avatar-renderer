@@ -1,15 +1,8 @@
 //REQUEST FUNCTIONS
 async function RBLXGet(url, auth) {
-    let robloxSecurityCookie = undefined
-
-    if (auth) {
-        robloxSecurityCookie = ".ROBLOSECURITY=" + auth.getROBLOSECURITY()
-    }
-
     return new Promise((resolve, reject) => {
         let fetchHeaders = new Headers({
             "Content-Type": "application/json",
-            "Cookie": robloxSecurityCookie,
         })
 
         try {
