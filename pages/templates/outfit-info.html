@@ -1,0 +1,106 @@
+
+    <div class="OutfitInfo-left">
+        <div class="OutfitInfo-outfit">
+            <div class="OutfitInfo-outfit-image">
+                <button id="OutfitInfo-outfit-image-3d-button">3D</button>
+                <button id="outfit-download">
+                    <span class="material-symbols-outlined">
+                    download
+                    </span>
+                </button>
+                <img id="OutfitInfo-outfit-image" src="/assets/robloxloading.gif">
+                <form id="OutfitInfo-outfit-name-form"><input class="OutfitInfo-outfit-name" id="OutfitInfo-outfit-name"></form>
+                <a class="OutfitInfo-outfit-creator" id="OutfitInfo-outfit-creator">Creator: Loading...</a>
+            </div>
+        </div>
+
+        <div id="OutfitInfo-button-container">
+            <button id="OutfitInfo-save-computer">Save to Computer Outfits</button>
+            <button id="OutfitInfo-save-roblox">Save to Roblox Outfits</button>
+            <button id="OutfitInfo-wear">Wear</button>
+            <button id="OutfitInfo-buy">Buy</button>
+        </div>
+
+        <span class="OutfitInfo-pricedisclaimer">*Price is shown after pressing "Buy"</span>
+    </div>
+    
+    <div class="OutfitInfo-right">
+        <div class="OutfitInfo-view-toggle">
+            <button id="OutfitInfo-assets-button" class="OutfitInfo-view-button OutfitInfo-view-selected">Assets</button>
+            <button id="OutfitInfo-body-button" class="OutfitInfo-view-button">Body</button>
+        </div>
+        <div class="OutfitInfo-items-container" id="OutfitInfo-items-container">
+        
+        </div>
+        <div class="OutfitInfo-body-container" id="OutfitInfo-body-container">
+            <div id="OutfitInfo-rig-container">
+                <span id="OutfitInfo-rig-name">Rig Type</span>
+                <select id="OutfitInfo-rig">
+                    <option value="R15">R15</option>
+                    <option value="R6">R6</option>
+                </select>
+            </div>
+
+            <div id="OutfitInfo-scale-height" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Height</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="90" max="105" id="slider-height" class="scale-slider">
+            </div>
+            <div id="OutfitInfo-scale-width" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Width</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="70" max="100" id="slider-width" class="scale-slider">
+            </div>
+            <div id="OutfitInfo-scale-head" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Head</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="95" max="100" id="slider-head" class="scale-slider">
+            </div>
+            <div id="OutfitInfo-scale-depth" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Depth</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="85" max="100" id="slider-depth" class="scale-slider">
+            </div>
+            <div id="OutfitInfo-scale-proportion" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Proportions</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="0" max="100" id="slider-proportion" class="scale-slider">
+            </div>
+            <div id="OutfitInfo-scale-bodyType" class="OutfitInfo-scale-container">
+                <div class="OutfitInfo-scale">
+                    <span class="OutfitInfo-scale-name">Body Type</span>
+                    <span class="OutfitInfo-scale-value">100%</span>
+                </div>
+                <input type="range" min="0" max="100" id="slider-bodyType" class="scale-slider">
+            </div>
+
+            
+            <div id="OutfitInfo-body-color-section-top" class="bodycolor-section">
+                <input id="OutfitInfo-body-color-head" class="bodycolor bodycolor-head" type="color">
+            </div>
+            <div id="OutfitInfo-body-color-section-middle" class="bodycolor-section">
+                <input id="OutfitInfo-body-color-rightArm" class="bodycolor bodycolor-limb" type="color">
+                <input id="OutfitInfo-body-color-torso" class="bodycolor bodycolor-torso" type="color">
+                <input id="OutfitInfo-body-color-leftArm" class="bodycolor bodycolor-limb" type="color">
+            </div>
+            <div id="OutfitInfo-body-color-section-bottom" class="bodycolor-section">
+                <input id="OutfitInfo-body-color-rightLeg" class="bodycolor bodycolor-limb" type="color">
+                <input id="OutfitInfo-body-color-leftLeg" class="bodycolor bodycolor-limb" type="color">
+            </div>
+            
+        </div>
+    </div>
+
+    <span id="OutfitInfo-close" class="material-symbols-outlined">
+        close
+    </span>
