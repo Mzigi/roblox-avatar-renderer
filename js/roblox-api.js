@@ -99,7 +99,7 @@ function parseAssetString(str) {
         return `https://assetdelivery.roproxy.com/v1/asset?id=${str.slice(13)}`
     } else if (str.startsWith("rbxasset://")) {
         str = str.replaceAll("\\","/")
-        return "/assets/rbxasset/" + str.slice(11)
+        return "assets/rbxasset/" + str.slice(11)
     } else if (str.includes("roblox.com/asset")) { //i am tired of the 1 million variants of https://www.roblox.com/asset/?id=
         return `https://assetdelivery.roproxy.com/v1/asset?id=${idFromStr(str)}`
     } else if (str.startsWith("https://assetdelivery.roblox.com/v1/asset/?id=")) {
