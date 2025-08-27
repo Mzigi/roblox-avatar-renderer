@@ -2223,7 +2223,7 @@ class RBX {
     async fromOutfit(outfit) {
         let outfitStartTime = performance.now()
 
-        let response = await fetch(`/assets/Rig${outfit.playerAvatarType}.rbxm`)
+        let response = await fetch(`assets/Rig${outfit.playerAvatarType}.rbxm`)
         let buffer = await response.arrayBuffer()
 
         this.fromBuffer(buffer)
